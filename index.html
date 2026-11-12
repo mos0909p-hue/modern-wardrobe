@@ -16,13 +16,14 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 <!-- TikTok Pixel Code End -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#211d18">
 <title>الخزانة الحديثة</title>
 
 <style>
 *{box-sizing:border-box}
 body{
 margin:0;
-font-family:Tahoma,Arial;
+font-family:Tahoma,Arial,sans-serif;
 background:#f7f5f1;
 color:#222;
 }
@@ -36,14 +37,13 @@ header h1{
 font-size:35px;
 color:#e4c68f;
 }
-header p{
-line-height:2;
-}
+header p{line-height:2}
 .container{
-max-width:700px;
+max-width:750px;
 margin:auto;
-padding:15px;
+padding:15px 15px 100px;
 }
+h2{text-align:center}
 .gallery{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -54,6 +54,7 @@ width:100%;
 height:210px;
 object-fit:cover;
 border-radius:12px;
+background:#ddd;
 }
 .gallery img:first-child{
 grid-column:1/3;
@@ -67,7 +68,9 @@ border-radius:18px;
 text-align:center;
 }
 .btn{
-display:block;
+display:flex;
+align-items:center;
+justify-content:center;
 padding:17px;
 margin-top:13px;
 border-radius:13px;
@@ -75,14 +78,8 @@ text-decoration:none;
 font-weight:bold;
 font-size:18px;
 }
-.call{
-background:#c7a875;
-color:#222;
-}
-.whatsapp{
-background:#20c96b;
-color:white;
-}
+.call{background:#c7a875;color:#222}
+.whatsapp{background:#20c96b;color:white}
 .fixed{
 position:fixed;
 bottom:0;
@@ -126,7 +123,8 @@ a.src=n+"?sdkid="+e+"&lib="+t;
 var s=d.getElementsByTagName("script")[0];
 s.parentNode.insertBefore(a,s);
 };
-ttq.load("YOUR_PIXEL_ID");
+
+ttq.load("DBFPRM3C77UASCMGMK2G");
 ttq.page();
 }(window,document,"ttq");
 </script>
@@ -138,14 +136,16 @@ ttq.page();
 <h1>الخزانة الحديثة</h1>
 <p>
 أحدث تصاميم خزائن غرف النوم
+<br>
 أناقة وفخامة وتنظيم لمساحتك
+<br>
 تواصل معنا للاستفسار
 </p>
 </header>
 
 <div class="container">
 
-<h2 style="text-align:center">معرض الخزائن</h2>
+<h2>معرض الخزائن</h2>
 
 <div class="gallery">
 <img src="image1.jpg" alt="خزانة ملابس">
@@ -162,8 +162,7 @@ ttq.page();
 <a class="btn call"
 href="tel:+966537571102"
 onclick="trackCall()">
-📞 اتصل الآن
-<br>0537571102
+📞 اتصل الآن 0537571102
 </a>
 
 <a class="btn whatsapp"
@@ -194,8 +193,7 @@ onclick="trackWhatsApp()">
 </div>
 
 <script>
-
-// حدث الاتصال مستقل
+// حدث الاتصال
 function trackCall(){
 if(window.ttq){
 ttq.track('Contact',{
@@ -204,7 +202,7 @@ content_name:'Phone Call'
 }
 }
 
-// حدث الواتساب مستقل
+// حدث الواتساب
 function trackWhatsApp(){
 if(window.ttq){
 ttq.track('ClickButton',{
@@ -212,7 +210,6 @@ content_name:'WhatsApp'
 });
 }
 }
-
 </script>
 
 </body>
